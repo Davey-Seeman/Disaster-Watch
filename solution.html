@@ -1,0 +1,110 @@
+<html>
+    <head>
+<!-- Links to external stylesheets -->
+    <link href="disasters.css"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link to javascript page -->
+    <script src="disasterfunctions.js"></script>
+    </head>
+    <body>
+<!-- Dropdown menu -->
+        <ul>
+      <li><a href="">Solution</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Pages</a>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+          <a href="problem.html">The Problem</a>
+        </div>
+      </li>
+        <li><a href="https://indicators.report/targets/11-b/"style="margin-left: 18px;">About SDG Target 11.b</a></li>
+    </ul>
+
+<!-- Code for Title and Image -->
+        <div class="bg-image">
+        <img src=solution.png height="400" width=1460 style="filter: blur(0px)">
+        </div>
+
+        <div class="bg-text">
+          <h1 style="font-size:45px">The Solution</h1>
+          <h2 style="color: white">How Governments and City Planners Need to Take Action</h2>
+        </div>
+<!-- Code for First Section -->
+        <div class="sec1">
+           <h2>Policies<br></h2>
+            <center><p style="transform: translate(-21.5%, 32%);"> All governments need to implement basic policies to keep everyone in their community<br><br> safe. Procedures are a great preventitive measure because they make sure everyone knows what to<br><br> do to stay safe in the case of a disaster. Click on the numbers to the right to learn 3<br><br> essential safety measures for almost any community.</p></center>
+            <div id ="TypeContainer" class="sec1safety"style="position:relative; width:350; height:325; transform: translate(0,-198px);">
+                <h3 style="position: absolute; left:52;"> 3 Essential Safety Measures:</h3>
+                <!-- Following Buttons Activate Typewritter Feature -->
+                <button id ="1" onclick= "typeFlood()" style="position:absolute; top:70px; left:30; background-color: lightcoral; padding:5px; cursor: pointer; font-size: 15px; border-width: thick;">1: </button>
+                <button id ="2" onclick= "typeBuildingCodes()" style="position:absolute; top:165px; left:30; background-color: greenyellow; padding:5px; cursor: pointer; font-size: 15px; border-width: thick;">2: </button>
+                <button id ="3" onclick= "typeEmergencyWarn()" style="position:absolute; top:265px; left:30; background-color: skyblue; padding:5px; cursor: pointer; font-size: 15px; border-width: thick;">3: </button>
+            </div>
+        </div>
+<!-- Code for Second Section -->
+        <div class="sec2">
+            <h2> Prevention <br></h2><p style="transform: translate(0%, 50%);"> - Governments need to invest more time and money into safe infrastructure to resist disasters<br><br><br><br> - Developed countries need to financially support less developed countries <br><br><br><br> - When destructive disasters occur, cities need to recover and adapt to avoid future disasters </p>
+            <!-- Video in Second Section -->
+            <div class="sec2vid"> 
+                <center><p style="font-family: sans-serif; transform: translate(0,5px);"><b><br><br>See this video from The World Bank on how cities<br><br> can become more disaster-resilient</b></p></center>
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/BrjIL---08Y">
+                </iframe>
+            </div>
+        </div>
+<!-- Code for Footer -->
+        <div class="footer1">
+            <!-- Button popups -->
+            <div class="popup1" onclick="feedback()">Feedback <i class="fa fa-pencil-square-o" style="font-size:24px"></i>
+                <span class="popuptext" id="myPopup" style="font-size: 15">Send me feedback about how to improve my website!<br> Email me at <u>david.seeman@ucc.on.ca</u></span>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="popup2" onclick="sources()">Sources <i class="fa fa-globe" style="font-size:24px"></i>
+                <span class="popuptext" id="myPopup2"><center style="font-size: 16">Sources</center><br>"Disaster Risk - Disaster Risk Reduction and Disaster Risk Management | Preventionweb.Net". Preventionweb.Net, 2020, https://www.preventionweb.net/risk/drr-drm. Accessed 23 Mar 2020.<br><br>
+                "Economic Losses, Poverty & Disasters: 1998-2017". Undrr.Org, 2020, https://www.undrr.org/publication/economic-losses-poverty-disasters-1998-2017. Accessed 26 Mar 2020. <br><br>  Ritchie, Hannah, and Max Roser. "Natural Disasters". Our World In Data, 2014, p. ., https://ourworldindata.org/natural-disasters. Accessed 26 Mar 2020.</span>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var i = 0; //Counter Variable
+        var j = 0; //Counter Variable
+        var k = 0; //Counter Variable
+        var floodD = ' Flood Defences';
+        var buildingC= ' Building Construction Codes';
+        var emergencyW=' Emergency Warning Systems';
+        var speed = 45;
+
+//Typewritter Functions
+
+        function typeFlood() {
+          if (i < floodD.length) {
+            document.getElementById("1").innerHTML += floodD.charAt(i); //types each letter of string 1 by 1
+            i++;
+            setTimeout(typeFlood, speed); //The function repeats after 45 milliseconds, which is the value of speed, until entire string is typed.
+          }
+        }
+
+        function typeBuildingCodes() {
+          if (j < buildingC.length) {
+            document.getElementById("2").innerHTML += buildingC.charAt(j); //types each letter of string 1 by 1
+            j++;
+            setTimeout(typeBuildingCodes, speed); //The function repeats after 45 milliseconds, which is the value of speed, until entire string is typed.
+          }
+        }
+
+        function typeEmergencyWarn() {
+          if (k < emergencyW.length) {
+            document.getElementById("3").innerHTML += emergencyW.charAt(k); //types each letter of string 1 by 1
+            k++;
+            setTimeout(typeEmergencyWarn, speed); //The function repeats after 45 milliseconds, which is the value of speed, until entire string is typed.
+          }
+        }  
+    </script>
+</html>
+
+
+
+
+
+

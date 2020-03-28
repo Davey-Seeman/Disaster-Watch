@@ -1,0 +1,194 @@
+<html>
+    <head>
+<!-- Links to external stylesheets -->
+        <link href="disasters.css"rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link to javascript page -->
+        <script src="disasterfunctions.js"></script>
+<!-- Link to JSON Data -->
+        <script src="11_5_2data.JSON"></script>
+    </head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+<!-- Dropdown menu -->
+        <ul>
+      <li><a href="">Problem</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Pages</a>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="solution.html">The Solution</a>
+        </div>
+      </li>
+        <li><a href="https://indicators.report/targets/11-b/"style="margin-left: 15px;">About SDG Target 11.b</a></li>
+    </ul>
+
+<!-- Code for Title and Image -->
+        <div class="bg-image">
+        <img src=Problem.jpg height="400" width=1450px>
+        </div>
+
+        <div class="bg-text">
+          <h1 style="font: bold 34px Century Schoolbook, Georgia, Times, serif; font-size:45px; font-weight: bold;">The Problem</h1>
+            <h2 style="color: white; font-family: sans-serif;
+        font-weight: bold;"> How disasters are wreaking havoc across the world </h2>
+        </div>
+
+<!-- Code for First Section -->
+        <div class="sec1"style="height:630px;">
+            <h2 class="grtitle">Direct economic loss attributed to disasters</h2>
+            <h2 class="grtitle2">relative to GDP in 2018 (%)<br></h2>
+            <div class=findc style="font-family: sans-serif;"> <label>Find a Country:</label><input type="text" id= "country" class="w3-input" style="font-weight: 100; border-width:thick; border-bottom-color: #A9A9A9; background-color: lightgray;" autocomplete="off"></div>
+            <!-- Buttons placed in canvas -->
+            <div class="buttondiv">
+                <button class="submit" onclick="infotype()">Submit</button>
+                <button class="choices" onclick="choices()">Country Choices</button>
+                <button class="clear" onclick="cleargr()">Clear Graph</button>
+            </div>
+            <!-- Canvas containing bar graph -->
+            <canvas id="myCanvas" width="700" height="428" style="border:1px solid black;-moz-box-shadow:    inset 0 0 100px grey;
+   -webkit-box-shadow: inset 0 0 100px grey;
+   box-shadow:         inset 0 0 100px grey;">
+            </canvas>
+            <div class="sec1des">
+                <!-- Label to the right of graph -->
+                <center><p>The interactive bar graph on the right dislplays the amount at which <br><br>various contries are suffering economic loss from disasters relative to <br><br> their GDP. Simply enter a country, and the graph will<br><br> display a bar representing that contry's economic loss<br><br> from disasters. Generally, countries with high GDP's such as<br><br> Canada and Russia will not show up  because their loss from disasters is<br><br> minimal compared to their GDP. Many developing countries such as<br><br>  Peru, Tunisia, Sudan, Paraguay, Uganda, and 29 others can be displayed.<br><br> <b>Certain countries such as Mozambique, Colombia, and<br><br> Madagascar have modified scales because their<br><br> values are so large.</b></p></center>
+            </div>
+        </div>
+<!-- Code for Second Section -->
+        <!-- our world in data embeded map graph -->
+        <div class="igraph"><iframe src="https://ourworldindata.org/grapher/direct-economic-loss-attributed-to-disasters" style="width: 520px; height: 500px; border: 0px none;"></iframe></div>
+        <!-- label to the left of embeded graph -->
+        <center><div style="position:absolute; top: 1160px; left: 150px;"><p>On the right, is an embedded map graph from the "Our World in Data" website made <br><br>by Oxford University. The darker the green of a country, the more that coutry suffers <br><br>economic loss from disasters. The graph contains various interactive features. <br><br> Hover your cursor over a country and a popup displays that country's <br><br>economic loss from disasters. There is a scroll bar located on the bottom<br><br> of the graph, which allows you to modify the year of the data displayed.<br><br> Click on the "chart" button on the bottom of the graph to see the data<br><br> displayed in a line graph.<br><br></p></div></center>
+
+<!-- Code for Footer -->
+        <div class="footer1">
+            <!-- Button popups -->
+            <div class="popup1" onclick="feedback()">Feedback <i class="fa fa-pencil-square-o" style="font-size:24px"></i>
+                <span class="popuptext" id="myPopup" style="font-size: 15; transform: translate(-42px,0); width: 250px;">Send me feedback about how to improve my website!<br> Email me at <u>david.seeman@ucc.on.ca</u></span>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="popup2" onclick="sources()">Sources <i class="fa fa-globe" style="font-size:24px"></i>
+                <span class="popuptext" id="myPopup2"><center style="font-size: 16">Sources</center><br>"Disaster Risk - Disaster Risk Reduction and Disaster Risk Management | Preventionweb.Net". Preventionweb.Net, 2020, https://www.preventionweb.net/risk/drr-drm. Accessed 23 Mar 2020.<br><br>
+                "Economic Losses, Poverty & Disasters: 1998-2017". Undrr.Org, 2020, https://www.undrr.org/publication/economic-losses-poverty-disasters-1998-2017. Accessed 26 Mar 2020. <br><br>  Ritchie, Hannah, and Max Roser. "Natural Disasters". Our World In Data, 2014, p. ., https://ourworldindata.org/natural-disasters. Accessed 26 Mar 2020.</span>
+            </div>
+        </div>
+
+    </body>
+
+
+    <script>
+
+//Javascript code to draw graph
+    drawGraph();
+        function drawGraph() {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");   
+                // draw some values * 50000
+
+                // example country
+                ctx.font = "15px Arial";
+                ctx.fillStyle = "blue";
+                ctx.fillRect(175,15,data[5]['Value'] * 50000,50);
+                ctx.fillText("Example",48,30);
+                ctx.fillText(data[5]['GeoAreaName']+ ": " + data[5]['Value']+ "%",10,55);
+            }
+
+        var y = 110 // this variable controls y value of rectangles
+        var rectpos = 1 //this variable tests the position of rectangles
+        var check = false;
+// draw rectangles on input
+        function infotype(){
+            var c = document.getElementById("myCanvas");
+            var cty = c.getContext("2d");
+            var input = document.getElementById("country").value;
+            //random colours
+            var colours = ["red","Navy","green","Coral","Peru","IndianRed","Salmon","DarkGoldenRod","Indigo","Maroon","Olive"];
+            var random = colours[Math.floor(Math.random()*colours.length)];
+            cty.fillStyle = random;
+            //sequential search
+            for (i = 0; i < data.length; i++) {
+                //error check
+                if(typeof(check) == 'undefined'){
+                    var check = false;
+                }else{
+                    if (input == data[i]['GeoAreaName']) {
+                        //checks if rectangle goes below graph, if so, it moves the rectangle to top of graph
+                        if (rectpos==6){
+                            y=y-420;
+                            rectpos=0;
+                        }
+                        // divided by 20 scale
+                        if(i==1 || i==17){
+                            cty.clearRect(0,y-25,700,70);
+                            cty.fillStyle = "Green";
+                            cty.fillText(data[i]['GeoAreaName']+ ": " + data[i]['Value']+ "%",10,y);
+                            cty.fillRect(175,y-25,data[i]['Value'] * 2500,50);
+                            cty.fillStyle = "Black";
+                            cty.fillText("Modfied Scale: 20x Smaller",(data[i]['Value'] * 2500+180)/2,y+40);
+                            y=y+70;
+                            rectpos=rectpos+1;
+                            var check = true;
+                            break;    
+                        }
+                        // divided by 10 scale
+                        if(i==24 || i==30 || i==19 || i==36){
+                            cty.clearRect(0,y-25,700,70);
+                            cty.fillStyle = "Red";
+                            cty.fillText(data[i]['GeoAreaName']+ ": " + data[i]['Value']+ "%",10,y);
+                            cty.fillRect(175,y-25,data[i]['Value'] * 5000,50);
+                            cty.fillStyle = "Black";
+                            cty.fillText("Modfied Scale: 10x Smaller",(data[i]['Value'] * 5000+180)/2,y+40);
+                            y=y+70;
+                            rectpos=rectpos+1;
+                            var check = true;
+                            break;    
+                        }
+                        //Code to draw rectangles without modified scales
+                        cty.clearRect(0,y-25,700,70);
+                        cty.fillText(data[i]['GeoAreaName']+ ": " + data[i]['Value']+ "%",10,y);
+                        cty.fillRect(175,y-25,data[i]['Value'] * 50000,50);
+                        y=y+70;
+                        rectpos=rectpos+1;
+                        var check = true;
+                        break;         
+                    }
+                }
+            }
+
+            //error checking
+            if(check==false){
+                alert('Error: This is not a country experiencing economic loss from disasters. Note that countries must start with a capital letter. Click the "Country Choices" button to see the countries the can be shown.');
+            }
+        }
+
+
+
+// "Country Choices" button
+        function choices(){
+            countries=[] 
+            for (i = 0; i < data.length-1; i++) {
+                if(data[i]['GeoAreaName']!=countries){
+                    countries=data[i]['GeoAreaName']+", "+(countries);
+                }
+
+            }
+            countries=countries+"and lastly, Ukraine."
+            // Country Choices button onclick alert
+            alert("Not all countries can be displayed on this graph because many countries did not experience significant economic loss from disasters in 2018 or they were not included in the U.N. data. Here are the countries that show up:                                                                                              "+ 
+                  countries);
+        }
+
+// "Clear Graph" button
+        function cleargr(){
+                    var c = document.getElementById("myCanvas");
+                    var cty = c.getContext("2d");
+                    cty.clearRect(0, 0, 700, 428);
+                    var rectpos=1;
+                    var y=40;
+                };
+
+    </script>
+
+</html>

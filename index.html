@@ -1,0 +1,90 @@
+<html>
+<head>
+<!-- Links to external stylesheets -->
+    <link href="disasters.css"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link to javascript page -->
+    <script src="disasterfunctions.js"></script>
+</head>
+<body>
+<!-- Dropdown menu -->
+    <ul>
+      <li><a href="">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Pages</a>
+        <div class="dropdown-content">
+          <a href="problem.html">The Problem</a>
+          <a href="solution.html">The Solution</a>
+        </div>
+      </li>
+        <li><a href="https://indicators.report/targets/11-b/"style="margin-left: 30px;">About SDG Target 11.b</a></li>
+    </ul>
+ 
+<!-- Code for Title and Image -->
+    <div class="bg-image">
+        <img src=titleImage.jpg height="400" width=100%>
+    </div>
+
+    <div class="bg-text">
+      <h2 style="color: white">A Message to Governments and City Planners:</h2>
+      <h1 style="font-size:45px">Why We Should Design Disaster-Resilient Cities</h1>
+      <p>By: Davey Seeman</p>
+    </div>
+    
+<!-- Code for First Section -->
+    <div class="sec1">
+       <h2>Staggering Statistics<br></h2>
+        <p> - Each year, about 60 000 people die from natural disasters<br><br><br> - From 1998 to 2017, disasters are responsible for a worldwide economic loss of up to $2908 billion<br><br><br> - 77% of this total ($2245 billion) comes from climate-related disasters<br><br><br>- In 2010, 70% of all deaths in Haiti were caused by the Port-au-Prince earthquake.<br><br><br>- 0.1% of all deaths in the past decade are attributed to disasters</p>
+        <div class="sec1img">
+            <img src=Icons.jpg height="300" width=350>
+        </div>
+    </div>
+    
+<!-- Code for Second Section -->  
+    <div class="sec2">
+        <h2> Three Reasons <br></h2>
+        <p>There are three majors reasons why we need to focus on disaster resilience in the future: </p>
+        <!-- Flipping Images -->  
+        <div class="container">
+            <img src="money.jpg" alt="1. Expenses" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5 style="font-size: 15; transform: translate(0,50px)">1. Expenses<br></h5>
+                        <p style="font-size: 14; transform: translate(0,40px);"> Disasters are draining money and resources from communities, which can eventually pose a threat to a community's sustainability.  </p>
+                    </div>
+                </div>
+        </div>
+        <div class="container2">
+            <img src="climatechange.jpg" alt="2. Climate Change" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5 style="font-size: 15; transform: translate(0,50px)">2: Climate Change<br></h5>
+                        <p style="font-size: 14; transform: translate(0,40px);"> Disasters will become a bigger problem in our future because climate change is increasing the severity and number of natural disasters.  </p>
+                    </div>
+                </div>
+        </div>
+        <div class="container3">
+            <img src="Safety.jpg" alt="3. Safe Homes" class="image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5 style="font-size: 15; transform: translate(0,50px)">3: Safety<br></h5>
+                        <p style="font-size: 14; transform: translate(0,40px);"> Everyone, everywhere, should feel safe in their own city/community.</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-- Code for Footer -->
+    <div class="footer1">
+        <!-- Button popups -->
+        <div class="popup1" onclick="feedback()" >Feedback <i class="fa fa-pencil-square-o" style="font-size:24px"></i>
+            <span class="popuptext" id="myPopup" style="font-size: 15">Send me feedback about how to improve my website!<br> Email me at <u>david.seeman@ucc.on.ca</u></span>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="popup2" onclick="sources()">Sources <i class="fa fa-globe" style="font-size:24px"></i>
+            <span class="popuptext" id="myPopup2"><center style="font-size: 16">Sources</center><br>"Disaster Risk - Disaster Risk Reduction and Disaster Risk Management | Preventionweb.Net". Preventionweb.Net, 2020, https://www.preventionweb.net/risk/drr-drm. Accessed 23 Mar 2020.<br><br>
+                "Economic Losses, Poverty & Disasters: 1998-2017". Undrr.Org, 2020, https://www.undrr.org/publication/economic-losses-poverty-disasters-1998-2017. Accessed 26 Mar 2020. <br><br>  Ritchie, Hannah, and Max Roser. "Natural Disasters". Our World In Data, 2014, p. ., https://ourworldindata.org/natural-disasters. Accessed 26 Mar 2020.</span>
+        </div>
+    </div>
+</body>
+</html>

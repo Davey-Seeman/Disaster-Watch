@@ -1,0 +1,192 @@
+data=[ 
+  {
+    "GeoAreaName": "Costa Rica",
+    "TimePeriod": 2018,
+    "Value": 0.00026
+  },  
+  {
+    "GeoAreaName": "Colombia",
+    "TimePeriod": 2018,
+    "Value": 0.18025
+  },
+  {
+    "GeoAreaName": "Barbados",
+    "TimePeriod": 2018,
+    "Value": 0.0001
+  },
+  {
+    "GeoAreaName": "Bhutan",
+    "TimePeriod": 2018,
+    "Value": 0.00071
+  },
+  {
+    "GeoAreaName": "Botswana",
+    "TimePeriod": 2018,
+    "Value": 0.00001
+  },
+  {
+    "GeoAreaName": "Sri Lanka",
+    "TimePeriod": 2018,
+    "Value": 0.00311
+  },
+  {
+    "GeoAreaName": "Albania",
+    "TimePeriod": 2018,
+    "Value": 0.00041
+  },
+  {
+    "GeoAreaName": "Cyprus",
+    "TimePeriod": 2018,
+    "Value": 0.00017
+  },
+  {
+    "GeoAreaName": "Bulgaria",
+    "TimePeriod": 2018,
+    "Value": 0.00071
+  },
+  {
+    "GeoAreaName": "Gambia",
+    "TimePeriod": 2018,
+    "Value": 0.00721
+  },
+  {
+    "GeoAreaName": "Ecuador",
+    "TimePeriod": 2018,
+    "Value": 0
+  },
+  {
+    "GeoAreaName": "Angola",
+    "TimePeriod": 2018,
+    "Value": 0.00057
+  },
+  {
+    "GeoAreaName": "Ghana",
+    "TimePeriod": 2018,
+    "Value": 0.00013
+  },
+  {
+    "GeoAreaName": "Fiji",
+    "TimePeriod": 2018,
+    "Value": 0.00993
+  },
+  {
+    "GeoAreaName": "Kazakhstan",
+    "TimePeriod": 2018,
+    "Value": 0.00003
+  },
+  {
+    "GeoAreaName": "Lebanon",
+    "TimePeriod": 2018,
+    "Value": 0
+  },
+  {
+    "GeoAreaName": "Indonesia",
+    "TimePeriod": 2018,
+    "Value": 0.00059
+  },
+  {
+    "GeoAreaName": "Madagascar",
+    "TimePeriod": 2018,
+    "Value": 0.03047
+  },
+  {
+    "GeoAreaName": "Mexico",
+    "TimePeriod": 2018,
+    "Value": 0.00018
+  },
+  {
+    "GeoAreaName": "Malawi",
+    "TimePeriod": 2018,
+    "Value": 0.01834
+  },
+  {
+    "GeoAreaName": "Kyrgyzstan",
+    "TimePeriod": 2018,
+    "Value": 0.00197
+  },
+  {
+    "GeoAreaName": "Malaysia",
+    "TimePeriod": 2018,
+    "Value": 0.00113
+  },
+  {
+    "GeoAreaName": "Nepal",
+    "TimePeriod": 2018,
+    "Value": 0.00129
+  },
+  {
+    "GeoAreaName": "Morocco",
+    "TimePeriod": 2018,
+    "Value": 0
+  },
+  {
+    "GeoAreaName": "Mozambique",
+    "TimePeriod": 2018,
+    "Value": 0.02282
+  },
+  {
+    "GeoAreaName": "New Zealand",
+    "TimePeriod": 2018,
+    "Value": 0.00059
+  },
+  {
+    "GeoAreaName": "Panama",
+    "TimePeriod": 2018,
+    "Value": 0.00005
+  },
+  {
+    "GeoAreaName": "Pakistan",
+    "TimePeriod": 2018,
+    "Value": 0.00006
+  },
+  {
+    "GeoAreaName": "Paraguay",
+    "TimePeriod": 2018,
+    "Value": 0.00566
+  },
+  {
+    "GeoAreaName": "Guinea-Bissau",
+    "TimePeriod": 2018,
+    "Value": 0.00001
+  },
+  {
+    "GeoAreaName": "Romania",
+    "TimePeriod": 2018,
+    "Value": 0.05898
+  },
+  {
+    "GeoAreaName": "Peru",
+    "TimePeriod": 2018,
+    "Value": 0.00294
+  },
+  {
+    "GeoAreaName": "Tajikistan",
+    "TimePeriod": 2018,
+    "Value": 0.0009
+  },
+  {
+    "GeoAreaName": "Slovenia",
+    "TimePeriod": 2018,
+    "Value": 0.00135
+  },
+  {
+    "GeoAreaName": "Sudan",
+    "TimePeriod": 2018,
+    "Value": 0.00484
+  },
+  {
+    "GeoAreaName": "Uganda",
+    "TimePeriod": 2018,
+    "Value": 0.0075
+  },
+  {
+    "GeoAreaName": "Tonga",
+    "TimePeriod": 2018,
+    "Value": 0.01863
+  },
+  {
+    "GeoAreaName": "Ukraine",
+    "TimePeriod": 2018,
+    "Value": 0.00012
+  }
+]

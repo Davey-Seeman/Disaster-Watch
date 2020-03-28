@@ -1,0 +1,530 @@
+/* text and body specifications */
+
+h1{
+    color: whitesmoke;
+    font: bold 34px "Century Schoolbook", Georgia, Times, serif;
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: darkblue;
+    
+    
+}
+
+p{ 
+    font-family: "Lucida Grande", Tahoma;
+
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Dropdown Menu */
+
+
+
+
+ul {
+    font-family: sans-serif;
+    font-size: 17px;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: royalblue;
+    z-index:-1
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Dropdown Button Background Change to Darkblue on Hover */ 
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: darkblue;
+}
+
+li.dropdown {
+    display: inline-block;
+    margin-left: 1040px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Dropdown Content Background Change to Dark Grey on Hover */ 
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+/* Dropdown Content Displayed on Hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling for Blurred image */
+
+
+
+
+
+.bg-image {
+    position: absolute;
+    top:5px
+  /* The image used */
+  background-image: ("photographer.jpg");
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+    
+}
+
+
+/*All Section 1s Throughout Site*/
+
+
+
+
+
+
+/*General Section 1 style*/
+.sec1{
+    font-family: sans-serif;
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 350px;
+    position: absolute; 
+    top: 445px;
+    left: 0px;
+    padding-left: 150px;
+}
+
+/*Section 1 Image on Homepage*/
+.sec1img{
+    position: absolute;
+    left:60%;
+    transform: translate(5%, -98%);
+    width: 350px;
+    height: 300px;
+    border-color: red;
+    border: solid blue;
+    border-width: 4 3px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+/*Section 1 Graph Title on Problem Page*/
+.grtitle{
+    transform: translate(7%, -2%);
+    
+}
+.grtitle2{
+    transform: translate(14%, -12%);
+    
+}
+
+/*Description to the Right of Graph on Problem Page*/
+.sec1des{
+    position: absolute;
+    left: 870px;
+    top: 100px;
+    
+}
+/*Section 1 Styling for "3 Essential Safety Measures" Area of Solution Page*/
+.sec1safety{
+    border-color: cadetblue;
+    border: solid #000;
+    border-width: 1 1px;
+    position: absolute;
+    left: 830px;
+    transform: translate(0%, -50%);
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+
+/*All Section 2s Throughout Site*/
+
+
+
+
+
+
+/*General Section 2 style*/
+.sec2{
+    font-family: sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    position: absolute; 
+    top: 800px;
+    left: 0px;
+    padding-left: 150px;
+}
+
+/*Section 2 Fading Image Overlays on Homepage*/
+
+
+
+/*Image Container Divs*/
+
+.container {
+  position: absolute;
+  width: 20%;
+    border-color: red;
+    border: solid blue;
+    border-width: 4 4px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+.container2 {
+  position: absolute;
+  width: 20%;
+  transform: translate(123.65%, 0%);
+    border-color: red;
+    border: solid blue;
+    border-width: 4 4px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.container3 {
+  position: absolute;
+  width: 20%;
+  transform: translate(247.3%, 0%);
+    border-color: red;
+    border: solid blue;
+    border-width: 4 4px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+    
+}
+
+/*Image Overlay*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gainsboro;
+}
+
+/*Image Overlays Apear once Hovered Over*/
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+
+.container3:hover .overlay {
+  opacity: 1;
+}
+
+/* Text on Image Overlay */
+.text {
+  color: black;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  transform: translate(-47%, -60%);
+  text-align: center;
+  width: 300px;
+}
+
+/* Embedded Graph in Section 2 on Problem Page*/
+
+.igraph{
+    position: absolute;
+    top:1020;
+    left:750;
+    padding: 80px;
+}
+
+/* Video Seen in Section 2 on the Solutions Page */
+.sec2vid{
+    position: absolute;
+    transform: translate(0, -60%);
+    left: 950px;
+}
+
+
+
+/*Footer Styling on All Pages*/
+
+
+/*Feedback Button*/
+.footer1 {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: royalblue;
+   color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 80px;
+}
+
+/* Footer Popup container */
+.popup1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+    font-family: sans-serif;
+    background-color: darkgreen;
+    color:ghostwhite;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* The actual sources popup */
+.popup1 .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+    transform: translate(-35px,0)
+}
+
+/* Popup Arrow */
+.popup1 .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Clicking on the Popup Container will Show the Popup */
+.popup1 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/*Sources Button*/
+.footer2 {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: royalblue;
+   color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    left: 420px;
+}
+
+/* Footer Popup Container */
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+    font-family: sans-serif;
+    background-color: darkgreen;
+    color:ghostwhite;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* The Actual Footer Popup */
+.popup2 .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -160px;
+    font-size: 10px;
+    padding: 10px;
+}
+
+/* Popup Arrow */
+.popup2 .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Clicking on the Popup Container will Show the Popup */
+.popup2 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation to both the popups (fade in the popups) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+/* Canvas Containing Graph */
+
+
+
+
+
+
+/* "Find a Country" Text Above Input Box */
+.findc{
+    position:absolute;
+    transform: translate(280%, 12%);
+    font-family: sans-serif;
+
+}
+
+/* Buttons in Canvas */
+
+.submit{
+    
+   position:absolute;
+    transform: translate(832%, 220%);
+    font-family: sans-serif;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+      padding: 7px 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    
+}
+.choices{
+    position:absolute;
+    transform: translate(350%, 220%);
+    font-family: sans-serif;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+      padding: 7px 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+
+.clear{
+    position:absolute;
+    font-family: sans-serif;
+    background-color: darkcyan;
+    border: none;
+    color: white;
+      padding: 7px 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    transform: translate(580px,380px)
+}
